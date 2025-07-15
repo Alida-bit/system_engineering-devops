@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
-# Displays all currently running processes in a user-oriented hierarchical format
+# List all processes for all users, including those without a TTY,
+# with full command path and arguments, UID column, and process hierarchy
 
-ps -e -f --forest
+ps -eo uid,pid,ppid,%cpu,%mem,vsz,rss,tty,stat,start,time,cmd --forest
