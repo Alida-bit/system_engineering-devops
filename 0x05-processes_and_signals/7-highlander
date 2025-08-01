@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Handle SIGTERM signal
 trap 'echo "I am invincible!!!"' SIGTERM
 
-# Infinite loop with sleep
+# Infinite loop with a 2-second delay
 while true
 do
     echo "To infinity and beyond"
