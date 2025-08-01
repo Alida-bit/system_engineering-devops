@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 #
 
-# Handle SIGTERM signal by printing a message instead of exiting
+# Trap SIGTERM and prevent exit
 trap 'echo "I am invincible!!!"' SIGTERM
 
-# Infinite loop with a 2-second pause
+# Infinite loop
 while true
 do
     echo "To infinity and beyond"
